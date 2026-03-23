@@ -5,8 +5,8 @@ const redis = await createClient({ url: process.env.REDIS_URL }).connect();
 
 export default async function handler(req, res) {
   if (req.method === 'GET') {
-    const count = (await redis.get('count')) || 0;
-    return res.status(200).json({ count });
+    
+    return res.status(200).json("hi");
   }
 
   if (req.method === 'POST') {
