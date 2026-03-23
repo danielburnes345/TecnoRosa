@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff0f5;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #ff4fa3;
+  font-size: 50px;
+  font-family: cursive;
+}
+
+.filtros {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.morado {
+  background: #a64dff;
+  color: white;
+}
+
+.rosa {
+  background: #ff66b2;
+  color: white;
+}
+
+#map {
+  height: 400px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.datos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.about h2 {
+  color: #ff4fa3;
+}
+
+.about p {
+  color: #555;
+  line-height: 1.6;
+}
+
+footer {
+  background: #ffb6d9;
+  text-align: center;
+  padding: 15px;
+  color: #6a004f;
+  font-size: 14px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 20px;
+}

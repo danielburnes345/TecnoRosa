@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TecnoRosa</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!--Mapa Universal, Unicamente en méxico?**-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>TecnoRosa</h1>
+    <p>Directorio de atención para cáncer de mama en México</p>
+  </header>
+
+  <section class="about">
+  <h2>¿Qué es TecnoRosa?</h2>
+  <p>
+    TecnoRosa es una plataforma digital diseñada para apoyar a mujeres con cáncer de mama en México.
+    Su objetivo es facilitar el acceso a información confiable y a un directorio de centros médicos 
+    especializados en tratamientos como quimioterapia, radioterapia y diagnóstico oportuno.
+    El proyecto nace de la necesidad de atender un problema que aqueja a las mujeres mexicanas.
+  </p>
+  <p>
+    A través de un mapa interactivo, TecnoRosa permite localizar fácilmente hospitales y clínicas,
+    promoviendo la detección temprana y el acceso a servicios de salud.
+  </p>
+</section>
+
+  <!-- Botones de apartados -->
+  <section class="filtros">
+    <button onclick="filtrar('radio')" class="morado">Radioterapias</button>
+    <button onclick="filtrar('quimio')" class="rosa">Quimioterapias</button>
+    <button onclick="filtrar('todos')">Todos</button>
+  </section>
+
+  <!--Mapa-->
+  <div id="map"></div>
+
+  <!--Datos de importancia, consultar imagenes de inteligencia artificial**-->
+  <section class="datos">
+    <div class="card">
+      <!--Buscar Emoji de moño rosa Y CENTRAR***-->
+      <h3>🎗️ Dato</h3> 
+      <p>El cáncer de mama es el más común en mujeres a nivel mundial.</p>
+    </div>
+
+    <div class="card">
+      <h3>🧬 Detección</h3>
+      <p>Detectarlo a tiempo aumenta hasta 90% la probabilidad de supervivencia.</p>
+    </div>
+
+    <div class="card">
+      <h3>💗 Prevención</h3>
+      <p>La autoexploración mensual puede salvar vidas.</p>
+    </div>
+  </section>
+
+  <footer>
+        <p>&copy; Universidad Autónoma de Zacatecas. Francisco García Salinas. Lab**. Dra.. </p>
+    </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
