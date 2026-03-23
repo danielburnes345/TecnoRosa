@@ -1,12 +1,11 @@
 import { Redis } from '@upstash/redis';
-import { createClient } from 'redis';
 
-const redis = await createClient({ url: process.env.REDIS_URL }).connect();
+const redis = Redis.fromEnv();
 
 export default async function handler(req, res) {
   if (req.method === 'GET') {
-    
-    return res.status(200).json("hi");
+    const count = (await redis.get('count')) || 0;
+    return res.status(200).json({ count });
   }
 
   if (req.method === 'POST') {
