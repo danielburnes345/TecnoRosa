@@ -54,9 +54,12 @@ button {
 .delivered-prothesis {
   display: flex;
   justify-content: center;
-  flex-flow: column;
   gap: 20px;
   padding: 20px;
+}
+.delivered-prothesis-inner{
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
